@@ -11,7 +11,7 @@ from langchain.chains import create_history_aware_retriever, create_retrieval_ch
 from langchain.chains.combine_documents import create_stuff_documents_chain
 
 # OpenAI API Key setting -- get from .env file
-openai_api_key = st.secrets('OPENAI_API_KEY')
+openai_api_key = st.secrets['OPENAI_API_KEY']
 
 # PDF Load -- 사용설명서
 loader = PyPDFLoader("data/product_guide.pdf")
